@@ -1,0 +1,18 @@
+// colors
+$link: rgb(66,66,66);
+$link-hover: rgb(43, 130, 165);
+
+
+// Easing
+$cubic: cubic-bezier(.25,.46,.45,.94);
+
+
+//  Z-Index - Value based (map)
+$z-layers: (
+  'elementX':              0,
+  'elementY':              1
+);
+
+//  Use it
+// .class { z-index: z-index('elementX'); }  //  =>  z-index: 0
+// .class { @include z-index('elementY'); }  //  =>  z-index: 1
