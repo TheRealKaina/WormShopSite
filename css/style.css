@@ -1,7 +1,7 @@
 /*!
-    Copyright: WormShop Ltd. All Rights Reserved
-    Authors: Kaina *insert name here if you worked on this file*
-    Purpose: Fun & Entertainment
+  Copyright: WormShop Ltd. All Rights Reserved
+  Authors: Kaina *insert name here if you worked on this file*
+  Purpose: Fun & Entertainment
 */
 /* ------------------------------
   Breakpoint Settings
@@ -19,7 +19,7 @@
   box-sizing: border-box; }
 
 body {
-  background: lightgray;
+  background: #e1e1e1;
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.6em; }
@@ -45,7 +45,8 @@ body {
   justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   .navbar .logo h1 {
     color: #2e2e2e; }
   .navbar .nav-links a {
@@ -61,13 +62,22 @@ body {
       color: #2b82a5; }
 
 .green-worm-img {
+  position: relative;
   width: 100%;
   height: 500px;
-  background-image: url("images/green-worm.png");
+  background-image: url("../images/green-worm.png");
   background-position: center;
-  background-size: cover;
-  -webkit-box-shadow: 0 2px 10px rgba(66, 66, 66, 0.9);
-  box-shadow: 0 2px 10px rgba(66, 66, 66, 0.9); }
+  background-size: cover; }
+  .green-worm-img:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 38px 76px 38px;
+    border-color: transparent transparent #e1e1e1 transparent; }
 
 .categories {
   width: 100%;
@@ -108,9 +118,9 @@ body {
   -webkit-box-shadow: 0 2px 10px rgba(66, 66, 66, 0.9);
   box-shadow: 0 2px 10px rgba(66, 66, 66, 0.9); }
   .category--1 {
-    background-image: url("images/cat1.png"); }
+    background-image: url("../images/cat1.png"); }
   .category--2 {
-    background-image: url("images/cat2.png"); }
+    background-image: url("../images/cat2.png"); }
   .category-name {
     position: absolute;
     top: 50%;
