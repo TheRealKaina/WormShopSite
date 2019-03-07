@@ -1,0 +1,48 @@
+.navbar {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+
+    box-shadow: 0 4px 10px rgba(66,66,66,0.5);
+
+    width: 520px;
+    height: 50px;
+
+    background: rgba(216, 216, 216, 0.5);
+
+    border-radius: 0 0 40px 40px;
+
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+
+      h1 {
+        color: rgb(46, 46, 46);
+      }
+    }
+
+    .nav-links {
+
+      a {
+        text-decoration: none;
+        color: $link;
+
+        padding: 5px;
+
+        /* float: left; you can re-enable that so theres no space in-between the links */
+        // hissssssssssss begone float
+
+        letter-spacing: 1px;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $link-hover;
+        }
+      }
+    }
+}
