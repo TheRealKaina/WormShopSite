@@ -3,6 +3,28 @@
   Authors: Kaina *insert name here if you worked on this file*
   Purpose: Fun & Entertainment
 */
+/* reem-kufi-regular - latin */
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/reem-kufi-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Reem Kufi Regular"), local("ReemKufi-Regular"), url("../fonts/reem-kufi-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/reem-kufi-v6-latin-regular.woff2") format("woff2"), url("../fonts/reem-kufi-v6-latin-regular.woff") format("woff"), url("../fonts/reem-kufi-v6-latin-regular.ttf") format("truetype"), url("../fonts/reem-kufi-v6-latin-regular.svg#ReemKufi") format("svg");
+  /* Legacy iOS */ }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 /* ------------------------------
   Breakpoint Settings
 ------------------------------ */
@@ -83,11 +105,12 @@ body {
   width: 100%;
   height: 200px; }
   .categories-h1 {
-    margin: 20px auto;
+    margin: 40px auto 20px;
     font-size: 30px;
     letter-spacing: 2px;
-    width: 250px;
-    height: 30px; }
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1; }
 
 .category-buttons {
   width: 700px;
